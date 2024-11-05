@@ -7,6 +7,12 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
+  "twc": {
+    "static": {
+      "dir": "dist",
+      "index": "index.html"
+    }
+  },
   "engines": {
     "node": ">=20.0.0"
   },
