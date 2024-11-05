@@ -6,16 +6,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
-// В Docker контейнере порт должен браться из переменной окружения
-const PORT = process.env.PORT || 8080; // или просто process.env.PORT
+const PORT = process.env.PORT || 8080;
 
-app.use(express.static('dist', {
-  setHeaders: (res, path) => {
-    if (path.endsWith('.js')) {
-      res.set('Content-Type', 'application/javascript');
-    }
-  }
-}));
+app.use(express.static('dist'));
 
 app.get('*', (req, res) => {
   res.sendFile(join(__dirname, 'dist', 'index.html'));
@@ -23,4 +16,7 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
+}).on('error', (err) => {
+  console.error('Server failed to start:', err);
+  process.exit(1);
 });
