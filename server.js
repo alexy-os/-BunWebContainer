@@ -1,27 +1,13 @@
-import express from 'express';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { spawn } from 'child_process';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const port = process.env.PORT || 3000;
+const host = '0.0.0.0';
 
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-// Правильные MIME типы
-app.use(express.static('dist', {
-  setHeaders: (res, path) => {
-    if (path.endsWith('.js')) {
-      res.set('Content-Type', 'application/javascript');
-    }
-  }
-}));
-
-// Для SPA роутинга
-app.get('*', (req, res) => {
-  res.sendFile(join(__dirname, 'dist', 'index.html'));
+const server = spawn('vite', ['preview', '--host', host, '--port', port], {
+  stdio: 'inherit'
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+server.on('error', (err) => {
+  console.error('Failed to start server:', err);
+  process.exit(1);
 });
