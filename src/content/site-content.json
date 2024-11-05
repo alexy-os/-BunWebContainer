@@ -1,0 +1,93 @@
+{
+  "brand": {
+    "name": "Template Studio",
+    "description": "Template Management System"
+  },
+  "navigation": {
+    "main": [
+      {
+        "title": "Dashboard",
+        "icon": "Home",
+        "href": "/",
+        "badge": null
+      },
+      {
+        "title": "Templates",
+        "icon": "Package",
+        "href": "#",
+        "badge": null
+      },
+      {
+        "title": "Categories",
+        "icon": "FolderTree",
+        "href": "#",
+        "badge": null
+      },
+      {
+        "title": "Users",
+        "icon": "Users",
+        "href": "#",
+        "badge": null
+      },
+      {
+        "title": "Statistics",
+        "icon": "LineChart",
+        "href": "#",
+        "badge": null
+      }
+    ]
+  },
+  "upgradeCard": {
+    "title": "Upgrade to Enterprise",
+    "description": "Get advanced template management features and priority support",
+    "buttonText": "Upgrade Now"
+  },
+  "inventory": {
+    "title": "Template Library",
+    "emptyState": {
+      "title": "No templates available",
+      "description": "Start by creating your first template design",
+      "buttonText": "Add Template"
+    }
+  },
+  "search": {
+    "placeholder": "Search templates..."
+  },
+  "userMenu": {
+    "label": "Admin Panel",
+    "items": [
+      {
+        "title": "Profile Settings",
+        "href": "#"
+      },
+      {
+        "title": "System Settings",
+        "href": "#"
+      },
+      {
+        "title": "API Access",
+        "href": "#"
+      },
+      {
+        "title": "Logout",
+        "href": "#"
+      }
+    ]
+  },
+  "theme": {
+    "options": [
+      {
+        "value": "light",
+        "label": "Light Mode"
+      },
+      {
+        "value": "dark",
+        "label": "Dark Mode"
+      },
+      {
+        "value": "auto",
+        "label": "System Default"
+      }
+    ]
+  }
+} 
