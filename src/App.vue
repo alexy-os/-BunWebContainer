@@ -8,19 +8,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import { Input } from '@/components/ui/input'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet'
-import { Bell, CircleUser, Menu, Package2, Search } from 'lucide-vue-next'
+import { Bell, CircleUser, Menu, PencilRuler, Search } from 'lucide-vue-next'
 import { Icon } from '@iconify/vue'
 
 const mode = useColorMode()
 const { siteContent, getIcon } = useContent()
 
 useHead({
-  title: 'TemplatY App',
+  title: siteContent.value.brand.name,
   meta: [
     { name: 'description', content: siteContent.value.brand.description }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', href: siteContent.value.brand.favicon_base64 }
   ]
 })
 </script>
@@ -33,7 +33,7 @@ useHead({
         <!-- Brand -->
         <div class="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
           <a href="/" class="flex items-center gap-2 font-semibold">
-            <Package2 class="h-6 w-6" />
+            <PencilRuler class="h-5 w-5" />
             <span>{{ siteContent.brand.name }}</span>
           </a>
           <Button variant="outline" size="icon" class="ml-auto h-8 w-8">

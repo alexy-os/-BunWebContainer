@@ -1,7 +1,11 @@
 {
   "brand": {
-    "name": "Template Studio",
-    "description": "Template Management System"
+    "name": "TemplatY Studio",
+    "description": "Template Management System",
+    "logo": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-pencil-ruler'><path d='M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13'/><path d='m8 6 2-2'/><path d='m18 16 2-2'/><path d='m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17'/><path d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/><path d='m15 5 4 4'/></svg>",
+    "favicon": "/favicon.ico",
+    "favicon_base64": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM0MUI4ODMiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbC1ydWxlciI+PHBhdGggZD0iTTEzIDcgOC43IDIuN2EyLjQxIDIuNDEgMCAwIDAtMy40IDBMMi43IDUuM2EyLjQxIDIuNDEgMCAwIDAgMCAzLjRMNyAxMyIvPjxwYXRoIGQ9Im04IDYgMi0yIi8+PHBhdGggZD0ibTE4IDE2IDItMiIvPjxwYXRoIGQ9Im0xNyAxMSA0LjMgNC4zYy45NC45NC45NCAyLjQ2IDAgMy40bC0yLjYgMi42Yy0uOTQuOTQtMi40Ni45NC0zLjQgMEwxMSAxNyIvPjxwYXRoIGQ9Ik0yMS4xNzQgNi44MTJhMSAxIDAgMCAwLTMuOTg2LTMuOTg3TDMuODQyIDE2LjE3NGEyIDIgMCAwIDAtLjUuODNsLTEuMzIxIDQuMzUyYS41LjUgMCAwIDAgLjYyMy42MjJsNC4zNTMtMS4zMmEyIDIgMCAwIDAgLjgzLS40OTd6Ii8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+",
+    "manifest": "/manifest.json"
   },
   "navigation": {
     "main": [
